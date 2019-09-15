@@ -1,5 +1,11 @@
 
-footer{
+body {
+
+  text-align: center;
+
+}
+
+footer {
 
   font-family: 'Cabin';
 
@@ -8,6 +14,12 @@ footer{
 
 /* Sections */
 
+
+.black-section {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -48,4 +60,15 @@ footer{
   left: 10%;
   top: 20%;
   width: 80%;
+}
+
+/* Features */
+
+.feature {
+  padding: 5%;
+}
+
+.icon {
+  padding: 0 0 2rem;
+  color: #81d742;
 }

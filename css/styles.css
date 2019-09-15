@@ -8,9 +8,26 @@ body {
 footer {
 
   font-family: 'Cabin';
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+  font-family: 'Ubuntu';
+  font-weight: 700;
 
 }
 
+p {
+
+  font-family: 'Cabin';
+
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
 
 /* Sections */
 
@@ -68,7 +85,39 @@ footer {
   padding: 5%;
 }
 
-.icon {
+.feature-icon {
   padding: 0 0 2rem;
+  color: #81d742;
+}
+
+/* Testimonials */
+
+.testimonials-section {
+  background-color: #3a3a3a;
+  color: #fff;
+  font-family: 'Cabin';
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.center-testimonial-text {
+  padding: 7% 0;
+}
+
+.testimonial-image {
+  max-width: 99%;
+}
+
+.user-icon {
+  padding: 0 0 2rem;
+}
+
+/* Call To Action */
+
+/* Footer */
+
+.footer-icon {
   color: #81d742;
 }

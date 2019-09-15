@@ -28,10 +28,8 @@ p {
 
 .parallax {
   background-image: url("../images/press.jpg");
-
   height: 100%;
   /* padding: -84% 0 0; */
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,4 +153,18 @@ p {
 /* Footer */
 .footer-icon {
   color: #81d742;
+}
+
+@media (max-width: 768px) {
+.parallax {
+  visibility: hidden;
+}
+.press-image {
+  visibility: visible;
+  z-index: -1;
+}
+.main-title-logo {
+  visibility: visible;
+}
+
 }

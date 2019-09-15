@@ -1,8 +1,13 @@
+
 footer{
 
   font-family: 'Cabin';
 
 }
+
+
+/* Sections */
+
 
 /* Navigation Bar */
 .navbar {
@@ -22,4 +27,21 @@ footer{
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Ubuntu';
+}
+
+/* Title */
+
+#title-content {
+  padding: 0;
+}
+
+.title {
+  background-image: url("../images/press.jpg");
+  background-size: 100%;
+}
+
+.main-logo {
+  position: relative;
+  left: 10%;
+  width: 80%;
 }

@@ -36,12 +36,16 @@ footer{
 }
 
 .title {
-  background-image: url("../images/press.jpg");
-  background-size: 100%;
+  position: relative;
+}
+
+.press-image {
+  width: 100%;
 }
 
 .main-logo {
-  position: relative;
+  position: absolute;
   left: 10%;
+  top: 20%;
   width: 80%;
 }

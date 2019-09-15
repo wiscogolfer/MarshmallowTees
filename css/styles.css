@@ -38,6 +38,10 @@ p {
   color: #fff;
 }
 
+.about-us-section {
+  background-color: #000;
+}
+
 /* Navigation Bar */
 .navbar {
   padding: 0 0 4.5rem;
@@ -79,10 +83,21 @@ p {
   width: 80%;
 }
 
+/* About Us */
+
+.about-us-text {
+  color: #fff;
+  text-align: center;
+}
+
+.about-us-image {
+  width: 99%;
+}
+
 /* Features */
 
 .feature {
-  padding: 5%;
+  padding: 0 5% 2rem;
 }
 
 .feature-icon {
@@ -103,11 +118,11 @@ p {
 }
 
 .center-testimonial-text {
-  padding: 7% 0;
+  padding: 5% 0;
 }
 
 .testimonial-image {
-  max-width: 99%;
+  max-width: 30rem;
 }
 
 .user-icon {

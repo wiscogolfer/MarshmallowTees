@@ -170,25 +170,46 @@ p {
 }
 
 /* Call To Action */
+
+
+
+/* Contact Us */
+
+.form-section {
+  text-align: center;
+}
+
+.jot-form {
+  padding: 0 25%;
+}
+
 /* Footer */
 .footer-icon {
   color: #81d742;
 }
+
 @media only screen and (max-width: 992px) {
 .press-image {
 visibility: visible;
   z-index: -1;
 }
+
 .main-title-logo {
   visibility: visible;
 
 }
+
 .main-logo {
   top: 30%;
 }
+
 #overlay{
   visibility: :visible;
   z-index: 0;
+}
+
+.jot-Form {
+  padding: 0;
 }
 
 }

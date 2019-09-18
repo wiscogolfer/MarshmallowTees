@@ -75,6 +75,7 @@ p {
   background-color: #81d742;
   border-color: #81d742;
   color: #000;
+  border-radius: 40px;
 }
 
 .btn-primary:hover {
@@ -96,6 +97,12 @@ p {
   width: 100%;
   visibility: hidden;
 }
+
+.image-overlay {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+
 
 .main-logo {
   position: absolute;

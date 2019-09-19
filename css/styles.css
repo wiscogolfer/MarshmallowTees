@@ -180,7 +180,16 @@ p {
 }
 
 .jot-form {
-  padding: 0 25%;
+  padding: 7% 15%;
+}
+
+.contact-parallax {
+  padding: 0;
+}
+
+.contact-heading {
+  font-size: 4rem;
+  padding: 4% 0;
 }
 
 /* Footer */
@@ -210,6 +219,10 @@ visibility: visible;
 
 .jot-Form {
   padding: 0;
+}
+
+.contact-heading {
+  font-size: 2rem;
 }
 
 }

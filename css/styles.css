@@ -11,6 +11,7 @@ footer {
   font-family: 'Cabin';
   background-color: #3a3a3a;
   color: #fff;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -195,9 +196,19 @@ p {
 /* Footer */
 .footer-icon {
   color: #81d742;
+  padding: 1% 2%;
 }
 
+.copyright {
+  font-size: 0.75rem;
+}
+
+/* Responsiveness */
+
 @media only screen and (max-width: 992px) {
+
+/* Main Page */
+
 .press-image {
 visibility: visible;
   z-index: -1;
@@ -216,6 +227,8 @@ visibility: visible;
   visibility: :visible;
   z-index: 0;
 }
+
+/* Contact Us Page */
 
 .jot-Form {
   padding: 0;

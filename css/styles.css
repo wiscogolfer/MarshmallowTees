@@ -146,28 +146,26 @@ p {
   color: #81d742;
 }
 
-/* Testimonials */
-.testimonials-section {
+/* Instagram Section */
+.instagram-section {
   background-color: #3a3a3a;
   color: #fff;
   font-family: 'Cabin';
 }
 
-.carousel-item {
-  text-align: center;
+.instagram-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 26%;
 }
 
-.center-testimonial-text {
-  padding: 5% 0;
-}
-
-.testimonial-image {
-  width: 100%;
-  max-width: 30rem;
-}
-
-.user-icon {
-  padding: 0 0 2rem;
+.instagram-feed {
+border: 0;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+position: absolute;
 }
 
 /* Call To Action */
@@ -191,6 +189,10 @@ p {
 .contact-heading {
   font-size: 4rem;
   padding: 4% 0;
+}
+
+.social-link:hover {
+  color: #93f74a;
 }
 
 /* Footer */
@@ -224,7 +226,7 @@ visibility: visible;
 }
 
 #overlay{
-  visibility: :visible;
+  visibility: visible;
   z-index: 0;
 }
 

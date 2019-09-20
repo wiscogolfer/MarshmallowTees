@@ -191,6 +191,10 @@ position: absolute;
   padding: 4% 0;
 }
 
+.contact-us-image {
+  background-image: url("../images/messOShirts.jpg");
+}
+
 .social-link:hover {
   color: #93f74a;
 }
@@ -219,6 +223,10 @@ visibility: visible;
 .main-title-logo {
   visibility: visible;
 
+}
+
+.contact-us-image {
+  background-image: url("../images/messOShirts-tablet.jpg");
 }
 
 .main-logo {

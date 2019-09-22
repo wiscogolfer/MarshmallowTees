@@ -195,8 +195,17 @@ position: absolute;
   background-image: url("../images/messOShirts.jpg");
 }
 
+.no-parallax-contact {
+  visibility: hidden;
+}
+
 .social-link:hover {
   color: #93f74a;
+}
+
+.row-no-margin {
+margin-left: 0!important;
+margin-right: 0!important;
 }
 
 /* Footer */
@@ -213,6 +222,23 @@ position: absolute;
 
 @media only screen and (max-width: 992px) {
 
+
+
+.contact-us-no-padding {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+/* Navigation Bar */
+
+.contact-us-btn {
+  font-size: 1.35rem;
+}
+
+.navbar-brand {
+  padding: 1% 3%;
+}
+
 /* Main Page */
 
 .press-image {
@@ -225,10 +251,6 @@ visibility: visible;
 
 }
 
-.contact-us-image {
-  background-image: url("../images/messOShirts-tablet.jpg");
-}
-
 .main-logo {
   top: 30%;
 }
@@ -238,14 +260,77 @@ visibility: visible;
   z-index: 0;
 }
 
+/* Instagram Section */
+
+.instagram-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 26.35%;
+}
+
+/* About Us */
+
+.about-us-text {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+/* Features */
+
+h4 {
+  font-size: 3.5rem;
+}
+
+.feature {
+  font-size: 2.5rem;
+}
+
+
 /* Contact Us Page */
 
-.jot-Form {
+.jot-form {
   padding: 0;
 }
 
 .contact-heading {
   font-size: 2rem;
+}
+
+.contact-us-image {
+  background-image: linear-gradient(#000,#000);
+}
+
+.no-parallax-contact {
+  width: 100%;
+  object-fit: fill;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.cognito:not(.c-forms-actionBar) {
+    max-width: 100%!important;
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.cognito .c-forms-form-main {
+    margin-top: 0!important;
+}
+
+.cognito .c-span-24 .c-span-12 {
+    width: 100%;
+}
+
+.cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.cognito .c-forms-form button:not(.c-icon-button), .cognito .c-forms-form .c-add-item, .cognito .c-forms-form input[type=button], .cognito .c-forms-form .c-fileupload-dropzone .c-upload-button button {
+      font-size: 1.3rem!important;
 }
 
 }

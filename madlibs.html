@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Ubuntu:400,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap v4.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/22c0f62bb1.js"></script>
+
+  <title>Mad Libs - Marshmallow Tees</title>
+  <link rel="shortcut icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+  <section class="title-section" id="title">
+    <div class="container-fluid" id="title-content">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Marshmallow Tees Logo"> Marshmallow Tees</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-lg btn-primary" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="madlibs-hero-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="madlibs-title">Mad Libs Fun!</h1>
+          <p class="madlibs-description">Create hilarious stories with Marshmallow Tees! Choose from our templates or create your own custom Mad Libs adventure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Template Browser Section -->
+  <section class="madlibs-templates-section" id="templates">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>Choose a Story Template</h2>
+          <p class="section-description">Select one of our pre-built stories or create your own!</p>
+        </div>
+      </div>
+      <div class="row" id="template-cards">
+        <!-- Template cards will be dynamically inserted here -->
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <button class="btn btn-primary btn-lg" id="create-template-btn">
+            <i class="fas fa-plus"></i> Create Your Own Template
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Play Area Section -->
+  <section class="madlibs-play-section" id="play-area" style="display: none;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="play-title">Fill in the Blanks</h2>
+          <p id="play-description">Enter your words below to complete the story!</p>
+        </div>
+      </div>
+      
+      <!-- Input Form -->
+      <div class="row" id="input-form-container">
+        <div class="col-lg-8 mx-auto">
+          <form id="madlibs-form">
+            <!-- Dynamic inputs will be inserted here -->
+          </form>
+          <div class="text-center mt-4">
+            <button type="submit" form="madlibs-form" class="btn btn-primary btn-lg">Create Story!</button>
+            <button type="button" class="btn btn-secondary btn-lg ml-2" id="back-to-templates">Back to Templates</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Display -->
+      <div class="row" id="results-container" style="display: none;">
+        <div class="col-lg-10 mx-auto">
+          <div class="story-result">
+            <h3>Your Story:</h3>
+            <div id="completed-story" class="story-text"></div>
+            <div class="text-center mt-4">
+              <button class="btn btn-primary btn-lg" id="play-again">Play Again</button>
+              <button class="btn btn-secondary btn-lg ml-2" id="new-story">Choose Another Story</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Template Creator Section -->
+  <section class="madlibs-creator-section" id="creator-section" style="display: none;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>Create Your Own Mad Libs Template</h2>
+          <p class="section-description">Design a custom story by using placeholders like {{noun}}, {{verb}}, {{adjective}}, etc.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form id="template-creator-form">
+            <div class="form-group">
+              <label for="template-title">Template Title</label>
+              <input type="text" class="form-control" id="template-title" placeholder="Enter a catchy title..." required>
+            </div>
+            <div class="form-group">
+              <label for="template-description">Short Description</label>
+              <textarea class="form-control" id="template-description" rows="2" placeholder="Describe your story..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="template-story">Story Template</label>
+              <textarea class="form-control" id="template-story" rows="8" placeholder="Write your story using placeholders like {{noun}}, {{verb-ing}}, {{adjective}}, etc..." required></textarea>
+              <small class="form-text text-muted">Use double curly braces around word types: {{noun}}, {{verb}}, {{adjective}}, {{verb-ing}}, {{plural-noun}}, etc.</small>
+            </div>
+            <div id="validation-feedback" class="alert alert-danger" style="display: none;"></div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Save Template</button>
+              <button type="button" class="btn btn-secondary btn-lg ml-2" id="cancel-creator">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- Mad Libs Script -->
+  <script src="js/madlibs.js"></script>
+
+</body>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+
+      <i class="fab fa-facebook-f footer-icon"></i>
+      <i class="fab fa-instagram footer-icon"></i>
+      <p>Copyright © 2019 Marshmallow Tees</p>
+
+    </div>
+  </div>
+</footer>
+
+</html>

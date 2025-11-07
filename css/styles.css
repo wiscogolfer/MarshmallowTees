@@ -334,3 +334,292 @@ h4 {
 }
 
 }
+
+/* Mad Libs Styles */
+.madlibs-hero-section {
+  background-color: #000;
+  color: #fff;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.madlibs-title {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #81d742;
+}
+
+.madlibs-description {
+  font-family: 'Cabin';
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.madlibs-templates-section {
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 5% 0;
+}
+
+.madlibs-templates-section h2 {
+  color: #81d742;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-family: 'Cabin';
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.template-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+}
+
+.template-card .card {
+  background-color: #2a2a2a;
+  border: 2px solid #81d742;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.template-card .card:hover {
+  box-shadow: 0 10px 25px rgba(129, 215, 66, 0.3);
+  border-color: #93f74a;
+}
+
+.template-card .card-title {
+  color: #81d742;
+  font-weight: 700;
+}
+
+.template-card .card-text {
+  color: #ccc;
+  font-family: 'Cabin';
+}
+
+.template-card .btn-primary {
+  background-color: #81d742;
+  border-color: #81d742;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.template-card .btn-primary:hover {
+  background-color: #93f74a;
+  border-color: #93f74a;
+  transform: scale(1.05);
+}
+
+.template-card .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.template-card .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+  transform: scale(1.05);
+}
+
+.madlibs-play-section {
+  background-color: #000;
+  color: #fff;
+  padding: 5% 0;
+}
+
+.madlibs-play-section h2 {
+  color: #81d742;
+  margin-bottom: 1rem;
+}
+
+.madlibs-play-section .form-group label {
+  color: #81d742;
+  font-weight: 600;
+  font-family: 'Ubuntu';
+}
+
+.madlibs-play-section .form-control {
+  background-color: #2a2a2a;
+  border: 2px solid #81d742;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.madlibs-play-section .form-control:focus {
+  background-color: #333;
+  border-color: #93f74a;
+  box-shadow: 0 0 0 0.2rem rgba(129, 215, 66, 0.25);
+  color: #fff;
+}
+
+.story-result {
+  background-color: #2a2a2a;
+  border: 2px solid #81d742;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.story-result h3 {
+  color: #81d742;
+  margin-bottom: 20px;
+}
+
+.story-text {
+  font-family: 'Cabin';
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #fff;
+  text-align: left;
+}
+
+.madlib-token {
+  background-color: #81d742;
+  color: #000;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 2px;
+  animation: highlight 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+  0% { background-color: #ffeb3b; transform: scale(1.1); }
+  100% { background-color: #81d742; transform: scale(1); }
+}
+
+.madlibs-creator-section {
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 5% 0;
+}
+
+.madlibs-creator-section h2 {
+  color: #81d742;
+  margin-bottom: 1rem;
+}
+
+.madlibs-creator-section .form-group label {
+  color: #81d742;
+  font-weight: 600;
+  font-family: 'Ubuntu';
+}
+
+.madlibs-creator-section .form-control {
+  background-color: #2a2a2a;
+  border: 2px solid #81d742;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.madlibs-creator-section .form-control:focus {
+  background-color: #333;
+  border-color: #93f74a;
+  box-shadow: 0 0 0 0.2rem rgba(129, 215, 66, 0.25);
+  color: #fff;
+}
+
+.madlibs-creator-section .form-text {
+  color: #ccc;
+}
+
+.madlibs-creator-section .alert-danger {
+  background-color: #721c24;
+  border-color: #f1b0b7;
+  color: #f8d7da;
+}
+
+.madlibs-creator-section .alert-success {
+  background-color: #155724;
+  border-color: #c3e6cb;
+  color: #d4edda;
+}
+
+/* Button hover effects */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .madlibs-title {
+    font-size: 2.5rem;
+  }
+  
+  .madlibs-description {
+    font-size: 1rem;
+  }
+  
+  .story-text {
+    font-size: 1.1rem;
+  }
+  
+  .template-card .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .madlibs-title {
+    font-size: 2rem;
+  }
+  
+  .story-text {
+    font-size: 1rem;
+  }
+  
+  .madlibs-play-section .form-control,
+  .madlibs-creator-section .form-control {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Focus states for accessibility */
+.template-card .btn:focus,
+.template-card .btn-danger:focus,
+.madlibs-play-section .form-control:focus,
+.madlibs-creator-section .form-control:focus {
+  outline: 3px solid #93f74a;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+.template-card .card,
+.template-card .btn,
+.madlibs-play-section .form-control,
+.madlibs-creator-section .form-control {
+  transition: all 0.3s ease;
+}
